@@ -1,103 +1,295 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Safe Nepal Guide</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+
+body {margin:0; font-family:Arial; background:#f4f4f4;}
+
+.nav {background:#111; padding:15px; text-align:center;}
+
+.nav a {color:white; margin:15px; text-decoration:none; font-weight:bold;}
+
+.hero {
+
+  background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+
+  background-size:cover;
+
+  color:white;
+
+  padding:120px 20px;
+
+  text-align:center;
+
+}
+
+.section {padding:40px;}
+
+.cards {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+
+.card {
+
+  width:300px;
+
+  background:white;
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.card img {width:100%;}
+
+.card h3 {margin:10px;}
+
+.card p {margin:10px; font-size:14px;}
+
+.gallery img {width:300px; margin:5px; border-radius:10px;}
+
+.footer {background:#111; color:white; text-align:center; padding:15px;}
+
+</style>
+
+
+
 </head>
 
-<body style="margin:0; font-family:Arial; background:#f4f4f4;">
+
+
+<body>
+
+
 
 <!-- NAVBAR -->
-<div style="background:#111; padding:15px; text-align:center;">
-<a href="#home" style="color:white; margin:15px;">Home</a>
-<a href="#places" style="color:white; margin:15px;">Places</a>
-<a href="#culture" style="color:white; margin:15px;">Culture</a>
-<a href="#food" style="color:white; margin:15px;">Food</a>
-<a href="#contact" style="color:white; margin:15px;">Contact</a>
+
+<div class="nav">
+
+<a href="#home">Home</a>
+
+<a href="#places">Places</a>
+
+<a href="#culture">Culture</a>
+
+<a href="#food">Food</a>
+
+<a href="#contact">Contact</a>
+
 </div>
+
+
 
 <!-- HERO -->
-<div id="home" style="background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470'); background-size:cover; color:white; padding:120px; text-align:center;">
+
+<div class="hero" id="home">
+
 <h1>Safe Nepal Guide 🇳🇵</h1>
+
 <p>Explore Nepal safely, beautifully, and confidently</p>
+
 <p>नेपाललाई सुरक्षित र सुन्दर तरिकाले अनुभव गर्नुहोस्</p>
+
 </div>
 
-<!-- WHY VISIT -->
-<div style="padding:30px;">
-<h2>🌍 Why Visit Nepal? | नेपाल किन भ्रमण गर्ने?</h2>
-<p>Nepal is a land of mountains, culture, peace, and adventure. From the Himalayas to ancient temples, every place tells a story.</p>
-<p>नेपाल हिमाल, संस्कृति, शान्ति र साहसिक यात्राको देश हो। यहाँको हरेक स्थानले एउटा कथा सुनाउँछ।</p>
+
+
+<!-- WHY -->
+
+<div class="section">
+
+<h2>🌍 Why Visit Nepal?</h2>
+
+<p>Nepal is a land of mountains, culture, peace, and adventure. From Everest to ancient temples, every place tells a story.</p>
+
+<p>नेपाल हिमाल, संस्कृति र साहसिक यात्राको देश हो। यहाँको हरेक स्थानले कथा सुनाउँछ।</p>
+
 </div>
+
+
 
 <!-- PLACES -->
-<div id="places" style="padding:30px; background:white;">
-<h2>🏔️ Top Places to Visit</h2>
+
+<div class="section" id="places" style="background:#fff;">
+
+<h2 style="text-align:center;">🏔️ Top Places</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59">
 
 <h3>Pokhara 🌊</h3>
-<p>Beautiful lakes, peaceful environment, and mountain views. Perfect for relaxing and adventure.</p>
-<p>पोखरा शान्त वातावरण, सुन्दर ताल र हिमालको दृश्यका लागि प्रसिद्ध छ।</p>
+
+<p>Peaceful lakes, mountain views, adventure sports.</p>
+
+<p>पोखरा शान्त र सुन्दर शहर हो।</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7">
 
 <h3>Kathmandu 🏙️</h3>
-<p>Capital city full of temples, culture, and history. Explore ancient traditions.</p>
-<p>काठमाडौं नेपालका मन्दिर, संस्कृति र इतिहासले भरिएको राजधानी हो।</p>
+
+<p>Temples, culture, history and busy city life.</p>
+
+<p>काठमाडौं संस्कृति र इतिहासले भरिएको शहर हो।</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509644851169-2acc08aa25b5">
 
 <h3>Everest 🏔️</h3>
-<p>Home of the highest mountain in the world. A dream destination for travelers.</p>
-<p>सगरमाथा संसारको सबैभन्दा अग्लो हिमाल हो। यात्रुहरूको सपना हो।</p>
+
+<p>The highest mountain in the world.</p>
+
+<p>सगरमाथा संसारकै अग्लो हिमाल हो।</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1583244532610-7c2e6f86e2f2">
 
 <h3>Lumbini 🕊️</h3>
-<p>Birthplace of Lord Buddha. A peaceful spiritual place.</p>
-<p>लुम्बिनी भगवान बुद्धको जन्मस्थान हो। शान्त र आध्यात्मिक स्थल।</p>
+
+<p>Birthplace of Buddha, peaceful and spiritual.</p>
+
+<p>लुम्बिनी बुद्धको जन्मस्थान हो।</p>
 
 </div>
+
+
+
+</div>
+
+</div>
+
+
 
 <!-- GALLERY -->
-<div style="padding:30px;">
-<h2>📸 Nepal Gallery</h2>
 
-<img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" width="30%">
-<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" width="30%">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" width="30%">
+<div class="section">
+
+<h2 style="text-align:center;">📸 Experience Nepal</h2>
+
+<div class="gallery" style="text-align:center;">
+
+<img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa">
+
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
 
 </div>
+
+</div>
+
+
 
 <!-- CULTURE -->
-<div id="culture" style="padding:30px; background:white;">
-<h2>🎎 Nepali Culture | नेपाली संस्कृति</h2>
-<p>Nepal is rich in traditions, festivals, and hospitality. People are kind and welcoming.</p>
-<p>नेपाल विविध संस्कृति, चाडपर्व र अतिथि सत्कारका लागि प्रसिद्ध छ।</p>
+
+<div class="section" id="culture" style="background:#fff;">
+
+<h2>🎎 Nepali Culture</h2>
+
+<p>Nepal is rich in traditions, festivals, and hospitality. People are warm and welcoming.</p>
+
+<p>नेपाल विविध संस्कृति र चाडपर्वले भरिएको देश हो।</p>
+
 </div>
+
+
 
 <!-- FOOD -->
-<div id="food" style="padding:30px;">
-<h2>🍛 Nepali Food</h2>
-<p>Momos, Dal Bhat, Sekuwa, Newari dishes are must-try foods.</p>
-<p>मोमो, दालभात, सेकुवा, नेवारी खाना अवश्य चाख्नुहोस्।</p>
 
-<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" width="30%">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" width="30%">
-<img src="https://images.unsplash.com/photo-1606788075761-6c3e7d1c84a0" width="30%">
+<div class="section" id="food">
+
+<h2>🍛 Nepali Food</h2>
+
+<p>Momos, Dal Bhat, Sekuwa, Newari dishes are must try foods.</p>
+
+<p>मोमो, दालभात, सेकुवा अवश्य चाख्नुहोस्।</p>
+
+
+
+<div class="gallery" style="text-align:center;">
+
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
+<img src="https://images.unsplash.com/photo-1606788075761-6c3e7d1c84a0">
 
 </div>
+
+</div>
+
+
 
 <!-- ANIMALS -->
-<div style="padding:30px; background:white;">
+
+<div class="section" style="background:#fff;">
+
 <h2>🐐 Nature & Animals</h2>
-<p>Nepal is home to yaks, goats, rhinos, and beautiful wildlife.</p>
-<p>नेपालमा याक, बाख्रा, गैँडा र अन्य वन्यजन्तु पाइन्छन्।</p>
+
+<p>Nepal is home to yaks, goats, rhinos, and wildlife.</p>
+
+<p>नेपालमा याक, बाख्रा र वन्यजन्तु पाइन्छन्।</p>
+
 </div>
+
+
 
 <!-- CONTACT -->
-<div id="contact" style="padding:30px;">
+
+<div class="section" id="contact">
+
 <h2>📞 Contact</h2>
+
 <p>Email: safenepalguide@gmail.com</p>
+
 </div>
+
+
 
 <!-- FOOTER -->
-<div style="background:#111; color:white; text-align:center; padding:15px;">
+
+<div class="footer">
+
 <p>© 2026 Safe Nepal Guide | Built by Bhim 🚀</p>
+
 </div>
 
+
+
 </body>
-</html
+
+</html>
