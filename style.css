@@ -144,3 +144,22 @@ footer {
     font-size: 34px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links a:hover {
+  color: #ff8c42;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e6762f;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
