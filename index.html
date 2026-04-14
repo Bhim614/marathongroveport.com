@@ -1,250 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <h1>Premium Fuel. Modern Convenience.</h1>
-<p>Experience fast, clean, and reliable service designed for everyday drivers.</p>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marathon Gas Station | 4441 Broadway, Grove City, OH 43123</title>
-  <meta name="description" content="Marathon Gas Station at 4441 Broadway, Grove City, OH 43123. Fuel, snacks, drinks, convenience items, and quick service." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marathon Gas Station | Grove City</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+header h2 {
+  color: orange;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('hero-station.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.btn {
+  background: linear-gradient(45deg, red, orange);
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px red;
+}
+
+/* TRUST */
+.trust {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* SECTION */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* REVIEWS */
+.review {
+  margin: 20px auto;
+  max-width: 400px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* MAP */
+.map {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  opacity: 0.7;
+}
+
+/* FLOAT BUTTON */
+.call-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+</style>
 </head>
+
 <body>
-  <header class="header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">
-        <span class="brand-mark">M</span>
-        <span class="brand-text">
-          <strong>Marathon</strong>
-          <small>Gas Station</small>
-        </span>
-      </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-        ☰
-      </button>
+<header>
+  <h2>Marathon</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-      <nav class="nav" id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#products">Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Modern Fuel. Clean Convenience.</h1>
+    <p>Fast, reliable service for fuel, snacks, and everyday needs in Grove City.</p>
+
+    <a href="tel:+15404670053" class="btn">Call Now</a>
+    <a href="https://maps.google.com/?q=4441+Broadway+Grove+City+OH" class="btn">Directions</a>
+
+    <div class="trust">
+      ✔ Clean & Safe • ✔ Fast Service • ✔ Easy Location
     </div>
-  </header> 
+  </div>
+</section>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Convenience • Fuel • Quick Stop</p>
-          <h1>Fast, friendly service at Marathon Gas Station</h1>
-          <p class="lead">
-            Stop by for fuel, snacks, drinks, daily essentials, and a clean, convenient shopping experience.
-          </p>
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Fuel Station</div>
+    <div class="card">Snacks & Drinks</div>
+    <div class="card">Quick Stop Convenience</div>
+    <div class="card">Fast Checkout</div>
+  </div>
+</section>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="tel:+15404670053">Call Now</a>
-            <a class="btn secondary" href="#contact">Get Directions</a>
-          </div>
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>Popular Items</h2>
+  <div class="cards">
+    <div class="card">Cold Drinks</div>
+    <div class="card">Coffee</div>
+    <div class="card">Snacks</div>
+    <div class="card">Daily Essentials</div>
+  </div>
+</section>
 
-          <div class="info-cards">
-            <article class="info-card">
-              <span>Address</span>
-              <strong>4441 Broadway</strong>
-              <small>Grove City, OH 43123</small>
-            </article>
-            <article class="info-card">
-              <span>Phone</span>
-              <strong>+1 (540) 467-0053</strong>
-              <small>Quick customer support</small>
-            </article>
-            <article class="info-card">
-              <span>Hours</span>
-              <strong>Call for hours</strong>
-              <small>Confirm before visiting</small>
-            </article>
-          </div>
-        </div>
+<!-- REVIEWS -->
+<section>
+  <h2>Customer Reviews</h2>
+  <div class="review">"Very clean and quick service!" ⭐⭐⭐⭐⭐</div>
+  <div class="review">"Best stop in Grove City!" ⭐⭐⭐⭐⭐</div>
+  <div class="review">"Friendly and fast checkout." ⭐⭐⭐⭐⭐</div>
+</section>
 
-        <div class="hero-panel">
-          <div class="panel-card">
-            <h2>Why customers stop here</h2>
-            <ul>
-              <li>Easy highway-friendly location</li>
-              <li>Snacks, drinks, and convenience items</li>
-              <li>Fast in-and-out shopping</li>
-              <li>Friendly local service</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Visit Us</h2>
+  <p>4441 Broadway, Grove City, OH 43123</p>
+  <p><a href="tel:+15404670053" style="color:orange;">+1 (540) 467-0053</a></p>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">About Us</p>
-          <h2>Your neighborhood stop for everyday needs</h2>
-          <p>
-            Marathon Gas Station serves drivers, neighbors, and travelers with a simple goal:
-            make every stop quick, easy, and helpful.
-          </p>
-        </div>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps?q=4441+Broadway+Grove+City+OH&output=embed"
+      width="100%" height="300" style="border:0;"></iframe>
+  </div>
+</section>
 
-        <div class="two-col">
-          <div class="text-box">
-            <h3>Locally focused</h3>
-            <p>
-              We designed this website to help customers quickly find the address, phone number,
-              map, and what the store offers.
-            </p>
-          </div>
-          <div class="text-box">
-            <h3>Built for customers</h3>
-            <p>
-              Clear navigation, mobile-friendly layout, and direct call and map buttons make it easy
-              for customers to reach the store fast.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer>
+  © 2026 Marathon Gas Station — All rights reserved
+</footer>
 
-    <section class="section alt" id="services">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Services</p>
-          <h2>What customers can get here</h2>
-        </div>
+<a href="tel:+15404670053" class="call-btn">📞</a>
 
-        <div class="grid">
-          <article class="card">
-            <div class="icon">⛽</div>
-            <h3>Fuel Station</h3>
-            <p>Quick fuel stop for drivers on the go.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🛒</div>
-            <h3>Convenience Store</h3>
-            <p>Everyday essentials in one easy stop.</p>
-          </article>
-          <article class="card">
-            <div class="icon">☕</div>
-            <h3>Drinks & Coffee</h3>
-            <p>Fresh drinks and hot coffee for the road.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🍪</div>
-            <h3>Snacks & Food</h3>
-            <p>Quick snacks for work, travel, or home.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="products">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Products</p>
-          <h2>Popular items customers look for</h2>
-        </div>
-
-        <div class="grid products">
-          <article class="product-card">
-            <h3>Cold Drinks</h3>
-            <p>Soda, water, energy drinks, and more.</p>
-          </article>
-          <article class="product-card">
-            <h3>Snacks</h3>
-            <p>Chips, candy, cookies, and grab-and-go items.</p>
-          </article>
-          <article class="product-card">
-            <h3>Coffee & Hot Drinks</h3>
-            <p>A warm option for early mornings and late nights.</p>
-          </article>
-          <article class="product-card">
-            <h3>Daily Essentials</h3>
-            <p>Basic items people often need in a hurry.</p>
-          </article>
-          <article class="product-card">
-            <h3>Travel Needs</h3>
-            <p>Convenient items for drivers and travelers.</p>
-          </article>
-          <article class="product-card">
-            <h3>Fast Checkout</h3>
-            <p>Simple shopping with quick service at the counter.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="gallery">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Gallery</p>
-          <h2>Store photos</h2>
-          <p>Upload your real photos with these exact file names.</p>
-        </div>
-
-        <div class="gallery">
-          <figure>
-            <img src="store-front.jpg" alt="Marathon Gas Station front view" />
-            <figcaption>Front view</figcaption>
-          </figure>
-          <figure>
-            <img src="inside-1.jpg" alt="Inside the store" />
-            <figcaption>Inside the store</figcaption>
-          </figure>
-          <figure>
-            <img src="inside-2.jpg" alt="Products and shelves" />
-            <figcaption>Products and shelves</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Visit or call us</h2>
-          <div class="contact-box">
-            <p><strong>Business owners:</strong> Khagen Dhimal and Chabi Dhimal</p>
-            <p><strong>Address:</strong> 4441 Broadway, Grove City, OH 43123</p>
-            <p><strong>Phone:</strong> <a href="tel:+15404670053">+1 (540) 467-0053</a></p>
-            <p><strong>Google Maps:</strong> Use the map on the right to find us fast.</p>
-          </div>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="tel:+15404670053">Call Now</a>
-            <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=4441+Broadway+Grove+City+OH+43123" target="_blank" rel="noopener">Open Maps</a>
-          </div>
-        </div>
-
-        <div class="map-wrap">
-          <iframe
-            title="Marathon Gas Station Map"
-            src="https://www.google.com/maps?q=4441%20Broadway%2C%20Grove%20City%2C%20OH%2043123&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Marathon Gas Station. All rights reserved.</p>
-      <p>Designed for quick customer access on mobile and desktop.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
