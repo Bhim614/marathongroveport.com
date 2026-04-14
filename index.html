@@ -1,205 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Taylor Road Asian Market | Nepali & Indian Grocery</title>
-
-<style>
-body {
-  margin:0;
-  font-family:Arial;
-  background:#0f172a;
-  color:white;
-}
-
-.container {
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-.header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  font-size:22px;
-  font-weight:bold;
-  background:#f59e0b;
-  color:black;
-  padding:8px 14px;
-  border-radius:10px;
-}
-
-.lang {
-  background:#22c55e;
-  padding:8px 12px;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
-  color:black;
-}
-
-h1 {
-  font-size:30px;
-}
-
-.btn {
-  padding:12px 16px;
-  margin:5px;
-  border-radius:10px;
-  text-decoration:none;
-  display:inline-block;
-  font-weight:bold;
-}
-
-.call { background:#f59e0b; color:black; }
-.map { background:#1f2937; color:white; }
-.whatsapp { background:#25D366; color:black; }
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
-  margin-top:20px;
-}
-
-.card {
-  background:#1f2937;
-  padding:15px;
-  border-radius:12px;
-}
-
-.gallery img {
-  width:100%;
-  border-radius:10px;
-  margin-top:10px;
-}
-
-.deals {
-  background:#f59e0b;
-  color:black;
-  padding:20px;
-  border-radius:15px;
-  margin-top:25px;
-}
-
-.review {
-  background:#111827;
-  padding:15px;
-  border-radius:12px;
-  margin-top:10px;
-}
-
-.footer {
-  margin-top:40px;
-  text-align:center;
-  color:#9ca3af;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marathon Gas Station | 4441 Broadway, Grove City, OH 43123</title>
+  <meta name="description" content="Marathon Gas Station at 4441 Broadway, Grove City, OH 43123. Fuel, snacks, drinks, convenience items, and quick service." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">
+          <strong>Marathon</strong>
+          <small>Gas Station</small>
+        </span>
+      </a>
 
-<div class="container">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
 
-<div class="header">
-<div class="logo">TRAM</div>
-<div class="lang" onclick="toggleLang()">नेपाली</div>
-</div>
+      <nav class="nav" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<h1 id="title">Taylor Road Asian Market</h1>
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Convenience • Fuel • Quick Stop</p>
+          <h1>Fast, friendly service at Marathon Gas Station</h1>
+          <p class="lead">
+            Stop by for fuel, snacks, drinks, daily essentials, and a clean, convenient shopping experience.
+          </p>
 
-<p id="desc">Your trusted Nepali & Indian grocery store in Reynoldsburg.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="tel:+15404670053">Call Now</a>
+            <a class="btn secondary" href="#contact">Get Directions</a>
+          </div>
 
-<a href="tel:+16146046538" class="btn call">📞 Call</a>
-<a href="https://maps.google.com/?q=8305+Taylor+Rd+SW" target="_blank" class="btn map">📍 Directions</a>
-<a href="https://wa.me/16146046538" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+          <div class="info-cards">
+            <article class="info-card">
+              <span>Address</span>
+              <strong>4441 Broadway</strong>
+              <small>Grove City, OH 43123</small>
+            </article>
+            <article class="info-card">
+              <span>Phone</span>
+              <strong>+1 (540) 467-0053</strong>
+              <small>Quick customer support</small>
+            </article>
+            <article class="info-card">
+              <span>Hours</span>
+              <strong>Call for hours</strong>
+              <small>Confirm before visiting</small>
+            </article>
+          </div>
+        </div>
 
-<h2 id="products">Popular Products</h2>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <h2>Why customers stop here</h2>
+            <ul>
+              <li>Easy highway-friendly location</li>
+              <li>Snacks, drinks, and convenience items</li>
+              <li>Fast in-and-out shopping</li>
+              <li>Friendly local service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="grid">
-<div class="card" id="p1">Fresh vegetables</div>
-<div class="card" id="p2">Rice & lentils</div>
-<div class="card" id="p3">Spices & masala</div>
-<div class="card" id="p4">Frozen food</div>
-<div class="card" id="p5">Snacks</div>
-<div class="card" id="p6">Tea & drinks</div>
-</div>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About Us</p>
+          <h2>Your neighborhood stop for everyday needs</h2>
+          <p>
+            Marathon Gas Station serves drivers, neighbors, and travelers with a simple goal:
+            make every stop quick, easy, and helpful.
+          </p>
+        </div>
 
-<h2 id="galleryTitle">Store Gallery</h2>
+        <div class="two-col">
+          <div class="text-box">
+            <h3>Locally focused</h3>
+            <p>
+              We designed this website to help customers quickly find the address, phone number,
+              map, and what the store offers.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Built for customers</h3>
+            <p>
+              Clear navigation, mobile-friendly layout, and direct call and map buttons make it easy
+              for customers to reach the store fast.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="gallery">
-<img src="images/store1.jpg">
-<img src="images/store2.jpg">
-<img src="images/store3.jpg">
-<img src="images/store4.jpg">
-<img src="images/store5.jpg">
-<img src="images/store6.jpg">
-</div>
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>What customers can get here</h2>
+        </div>
 
-<div class="deals">
-<h2 id="dealTitle">🔥 Weekly Deals</h2>
-<p id="dealText">Fresh items and best-selling products available every week.</p>
-</div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">⛽</div>
+            <h3>Fuel Station</h3>
+            <p>Quick fuel stop for drivers on the go.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🛒</div>
+            <h3>Convenience Store</h3>
+            <p>Everyday essentials in one easy stop.</p>
+          </article>
+          <article class="card">
+            <div class="icon">☕</div>
+            <h3>Drinks & Coffee</h3>
+            <p>Fresh drinks and hot coffee for the road.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🍪</div>
+            <h3>Snacks & Food</h3>
+            <p>Quick snacks for work, travel, or home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h2>⭐ Reviews</h2>
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Products</p>
+          <h2>Popular items customers look for</h2>
+        </div>
 
-<div class="review">“Best Nepali store in town!”</div>
-<div class="review">“Clean and well organized.”</div>
-<div class="review">“Great prices and friendly service.”</div>
+        <div class="grid products">
+          <article class="product-card">
+            <h3>Cold Drinks</h3>
+            <p>Soda, water, energy drinks, and more.</p>
+          </article>
+          <article class="product-card">
+            <h3>Snacks</h3>
+            <p>Chips, candy, cookies, and grab-and-go items.</p>
+          </article>
+          <article class="product-card">
+            <h3>Coffee & Hot Drinks</h3>
+            <p>A warm option for early mornings and late nights.</p>
+          </article>
+          <article class="product-card">
+            <h3>Daily Essentials</h3>
+            <p>Basic items people often need in a hurry.</p>
+          </article>
+          <article class="product-card">
+            <h3>Travel Needs</h3>
+            <p>Convenient items for drivers and travelers.</p>
+          </article>
+          <article class="product-card">
+            <h3>Fast Checkout</h3>
+            <p>Simple shopping with quick service at the counter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h2 id="contact">Contact</h2>
+    <section class="section alt" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2>Store photos</h2>
+          <p>Upload your real photos with these exact file names.</p>
+        </div>
 
-<p>
-📍 8305 Taylor Rd SW suite 150, Reynoldsburg, OH<br>
-📞 (614) 604-6538<br>
-⏰ Open Daily 9 AM – 9 PM
-</p>
+        <div class="gallery">
+          <figure>
+            <img src="store-front.jpg" alt="Marathon Gas Station front view" />
+            <figcaption>Front view</figcaption>
+          </figure>
+          <figure>
+            <img src="inside-1.jpg" alt="Inside the store" />
+            <figcaption>Inside the store</figcaption>
+          </figure>
+          <figure>
+            <img src="inside-2.jpg" alt="Products and shelves" />
+            <figcaption>Products and shelves</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-<div class="footer">
-© 2026 Taylor Road Asian Market
-</div>
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Visit or call us</h2>
+          <div class="contact-box">
+            <p><strong>Business owners:</strong> Khagen Dhimal and Chabi Dhimal</p>
+            <p><strong>Address:</strong> 4441 Broadway, Grove City, OH 43123</p>
+            <p><strong>Phone:</strong> <a href="tel:+15404670053">+1 (540) 467-0053</a></p>
+            <p><strong>Google Maps:</strong> Use the map on the right to find us fast.</p>
+          </div>
 
-</div>
+          <div class="hero-actions">
+            <a class="btn primary" href="tel:+15404670053">Call Now</a>
+            <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=4441+Broadway+Grove+City+OH+43123" target="_blank" rel="noopener">Open Maps</a>
+          </div>
+        </div>
 
-<script>
-let np=false;
+        <div class="map-wrap">
+          <iframe
+            title="Marathon Gas Station Map"
+            src="https://www.google.com/maps?q=4441%20Broadway%2C%20Grove%20City%2C%20OH%2043123&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-function toggleLang(){
-np=!np;
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Marathon Gas Station. All rights reserved.</p>
+      <p>Designed for quick customer access on mobile and desktop.</p>
+    </div>
+  </footer>
 
-if(np){
-document.getElementById("title").innerText="टेलर रोड एशियन मार्केट";
-document.getElementById("desc").innerText="तपाईंको भरपर्दो नेपाली तथा भारतीय किराना पसल";
-
-document.getElementById("products").innerText="लोकप्रिय सामान";
-
-document.getElementById("p1").innerText="ताजा तरकारी";
-document.getElementById("p2").innerText="चामल र दाल";
-document.getElementById("p3").innerText="मसला";
-document.getElementById("p4").innerText="फ्रोजन खाना";
-document.getElementById("p5").innerText="नास्ता";
-document.getElementById("p6").innerText="चिया र पेय पदार्थ";
-
-document.getElementById("galleryTitle").innerText="पसलका फोटोहरू";
-
-document.getElementById("dealTitle").innerText="🔥 साप्ताहिक अफर";
-document.getElementById("dealText").innerText="हरेक हप्ता नयाँ अफरहरू उपलब्ध छन्";
-
-document.getElementById("contact").innerText="सम्पर्क";
-
-document.querySelector(".lang").innerText="English";
-
-}else{
-location.reload();
-}
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
