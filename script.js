@@ -1,28 +1,21 @@
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
-const year = document.getElementById("year");
+// SCROLL ANIMATION
+const elements = document.querySelectorAll(".card, section");
 
-year.textContent = new Date().getFullYear();
+window.addEventListener("scroll", () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
-menuBtn.addEventListener("click", () => {
-  const isOpen = navMenu.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", String(isOpen));
-  menuBtn.textContent = isOpen ? "✕" : "☰";
-});
-
-navMenu.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
-    menuBtn.textContent = "☰";
+    if(position < screenHeight - 100){
+      el.style.opacity = 1;
+      el.style.transform = "translateY(0)";
+    }
   });
 });
 
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header");
-  if (window.scrollY > 20) {
-    header.style.boxShadow = "0 10px 40px rgba(0,0,0,0.25)";
-  } else {
-    header.style.boxShadow = "none";
-  }
+// INITIAL STYLE
+elements.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(40px)";
+  el.style.transition = "all 0.8s ease";
 });
